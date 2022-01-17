@@ -27,7 +27,7 @@ public class SubarraySum
         SubarraySum subarraySum = new SubarraySum();
 
         System.out.println(subarraySum.subarraySum(nums1, 2));
-        System.out.println(subarraySum.subarraySum(nums2, 2));
+        System.out.println(subarraySum.subarraySum(nums2, 3));
     }
 
     public int subarraySum(int[] nums, int k)
