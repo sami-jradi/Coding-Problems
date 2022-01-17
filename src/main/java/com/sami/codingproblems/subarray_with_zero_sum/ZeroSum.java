@@ -39,13 +39,20 @@ public class ZeroSum
 
         for (int i = 0; i < n; i++)
         {
+
+            // Add current element to sum
             sum += input[i];
 
+            // Return true in following cases
+            // a) Current element is 0
+            // b) sum of elements from 0 to i is 0
+            // c) sum is already present in hash map
             if (sum == 0 || input[i] == 0 || sumSet.contains(sum))
             {
                 return true;
             }
 
+            // Add sum to hash set
             sumSet.add(sum);
         }
 
