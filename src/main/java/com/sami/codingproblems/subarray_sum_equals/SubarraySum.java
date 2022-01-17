@@ -1,4 +1,4 @@
-package com.sami.codingproblems.sub_array_sum_equals;
+package com.sami.codingproblems.subarray_sum_equals;
 
 import java.util.HashMap;
 
