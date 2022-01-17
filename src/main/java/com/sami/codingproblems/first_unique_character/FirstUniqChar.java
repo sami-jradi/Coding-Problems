@@ -1,4 +1,4 @@
-package first_unique_character;
+package com.sami.codingproblems.first_unique_character;
 
 import java.util.HashMap;
 
