@@ -48,10 +48,10 @@ public class SubarraySum
 
             if (sumMap.containsKey(sum - k))
             {
-                numOfSubarrays++;
+                numOfSubarrays += sumMap.get(sum - k);
             }
 
-            sumMap.put(sum, sumMap.getOrDefault(sum, 1) + 1);
+            sumMap.put(sum, sumMap.getOrDefault(sum, 0) + 1);
         }
 
         return numOfSubarrays;
