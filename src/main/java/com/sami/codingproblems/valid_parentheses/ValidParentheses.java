@@ -31,6 +31,7 @@ public class ValidParentheses
         String s2 = "()[]{}";
         String s3 = "(]";
         String s4 = "([])";
+        String s5 = "]";
 
         ValidParentheses validParentheses = new ValidParentheses();
 
@@ -38,6 +39,7 @@ public class ValidParentheses
         System.out.println(validParentheses.isValid(s2));
         System.out.println(validParentheses.isValid(s3));
         System.out.println(validParentheses.isValid(s4));
+        System.out.println(validParentheses.isValid(s5));
     }
 
     public boolean isValid(String input)
@@ -65,6 +67,10 @@ public class ValidParentheses
             else if (current == '}' && !stack.isEmpty() && stack.peek().equals('{'))
             {
                 stack.pop();
+            }
+            else
+            {
+                return false;
             }
         }
 
