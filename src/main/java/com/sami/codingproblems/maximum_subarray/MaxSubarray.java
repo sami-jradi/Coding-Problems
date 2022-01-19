@@ -1,4 +1,4 @@
-package com.sami.codingproblems.maxinmum_subarray;
+package com.sami.codingproblems.maximum_subarray;
 
 /**
  * Given an integer array nums, find the contiguous subarray (containing at least one number)
