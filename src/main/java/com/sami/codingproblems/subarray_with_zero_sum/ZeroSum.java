@@ -1,6 +1,5 @@
 package com.sami.codingproblems.subarray_with_zero_sum;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,13 +19,15 @@ public class ZeroSum
 {
     public static void main(String[] args)
     {
-        int[] nums1 = new int[] {4, 2, -3, 1, 6};
-        int[] nums2 = new int[] {3, 2, 3, 1, 6};
+        int[] nums1 = {4, 2, -3, 1, 6}; // output = true
+        int[] nums2 = {4, 2, 0, 1, 6}; // output = true
+        int[] nums3 = {-3, 2, 3, 1, 6}; // output = false
 
         ZeroSum zeroSum = new ZeroSum();
 
         System.out.println(zeroSum.zeroSum(nums1));
         System.out.println(zeroSum.zeroSum(nums2));
+        System.out.println(zeroSum.zeroSum(nums3));
     }
 
     public boolean zeroSum(int[] input)
