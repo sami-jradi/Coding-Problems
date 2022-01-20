@@ -21,8 +21,8 @@ public class SubarraySum
 {
     public static void main(String[] args)
     {
-        int[] nums1 = new int[] {1, 1, 1};
-        int[] nums2 = new int[] {1, 2, 3};
+        int[] nums1 = {1, 1, 1}; // output = 2 for k = 2
+        int[] nums2 = {1, 2, 1, 2, 1}; // output = 4 for k = 3
 
         SubarraySum subarraySum = new SubarraySum();
 
